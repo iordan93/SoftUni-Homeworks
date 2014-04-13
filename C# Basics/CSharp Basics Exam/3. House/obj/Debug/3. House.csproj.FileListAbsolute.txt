@@ -1,5 +1,0 @@
-D:\SoftUni\C# Basics\CSharp Basics Exam\3. House\bin\Debug\_3.House.exe.config
-D:\SoftUni\C# Basics\CSharp Basics Exam\3. House\bin\Debug\_3.House.exe
-D:\SoftUni\C# Basics\CSharp Basics Exam\3. House\bin\Debug\_3.House.pdb
-D:\SoftUni\C# Basics\CSharp Basics Exam\3. House\obj\Debug\_3.House.exe
-D:\SoftUni\C# Basics\CSharp Basics Exam\3. House\obj\Debug\_3.House.pdb

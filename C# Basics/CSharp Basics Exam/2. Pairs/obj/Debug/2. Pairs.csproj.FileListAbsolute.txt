@@ -1,5 +1,0 @@
-D:\SoftUni\C# Basics\CSharp Basics Exam\2. Pairs\bin\Debug\_2.Pairs.exe.config
-D:\SoftUni\C# Basics\CSharp Basics Exam\2. Pairs\bin\Debug\_2.Pairs.exe
-D:\SoftUni\C# Basics\CSharp Basics Exam\2. Pairs\bin\Debug\_2.Pairs.pdb
-D:\SoftUni\C# Basics\CSharp Basics Exam\2. Pairs\obj\Debug\_2.Pairs.exe
-D:\SoftUni\C# Basics\CSharp Basics Exam\2. Pairs\obj\Debug\_2.Pairs.pdb

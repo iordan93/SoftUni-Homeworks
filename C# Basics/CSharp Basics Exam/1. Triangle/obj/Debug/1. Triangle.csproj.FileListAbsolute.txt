@@ -1,6 +1,0 @@
-D:\SoftUni\C# Basics\CSharp Basics Exam\1. Triangle\bin\Debug\_1.Triangle.exe.config
-D:\SoftUni\C# Basics\CSharp Basics Exam\1. Triangle\bin\Debug\_1.Triangle.exe
-D:\SoftUni\C# Basics\CSharp Basics Exam\1. Triangle\bin\Debug\_1.Triangle.pdb
-D:\SoftUni\C# Basics\CSharp Basics Exam\1. Triangle\obj\Debug\1. Triangle.csprojResolveAssemblyReference.cache
-D:\SoftUni\C# Basics\CSharp Basics Exam\1. Triangle\obj\Debug\_1.Triangle.exe
-D:\SoftUni\C# Basics\CSharp Basics Exam\1. Triangle\obj\Debug\_1.Triangle.pdb
