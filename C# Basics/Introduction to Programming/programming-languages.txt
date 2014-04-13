@@ -1,0 +1,21 @@
+* Java
+Java is very similar to C#. It has most of its features, although some of them have different names. There are some things that Java misses from C#, for example, it does not have a type similar to decimal in C#. Also, it does not support structs (value types) like C#.
+
+* PHP
+PHP is quite different from C#. First of all, it is interpreted. This means there is no compilation like in C#, the scripts are evaluated on the go. Second, it's a dynamically typed language. The variables don't have types (like int, double, or string).
+
+* Python
+Like PHP, Python is also dynamically typed. It has quite a different syntax. In Python there are no curly braces ("{", "}"), no semicolons (";"), and the indentation of the lines of code matters. It is also a bit slower than C# because it is interpreted like PHP.
+
+* Visual Basic .NET
+Visual Basic .NET is very similar to C#. After compilation, both C# and Visual Basic .NET are compiled to the same intermediate language. The main difference between the two languages is in the syntax. Visual Basic .NET has a syntax similar to that of Python.
+
+* JavaScript
+JavaScript is not similar to Java in any way (except its name). It is very different than C#. It is interpreted and dynamic, like PHP and Python, but unlike PHP and Python (also unlike C#) it isn't object oriented. JavaScript was made for procedural programming only but there are many hacks pprogrammers use to make it work for nearly everything.
+
+Sources:
+http://en.wikipedia.org/wiki/Comparison_of_C_Sharp_and_Java
+http://stackoverflow.com/questions/7104656/how-does-php-compare-with-the-net-languages
+http://www.quora.com/Python-programming-language-1/How-does-Python-compare-to-C
+http://en.wikipedia.org/wiki/Comparison_of_C_Sharp_and_Visual_Basic_.NET
+http://stackoverflow.com/questions/2921418/javascript-vs-c-sharp

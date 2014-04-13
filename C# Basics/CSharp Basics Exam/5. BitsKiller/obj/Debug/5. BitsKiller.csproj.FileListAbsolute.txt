@@ -1,0 +1,5 @@
+D:\SoftUni\C# Basics\CSharp Basics Exam\5. BitsKiller\bin\Debug\_5.BitsKiller.exe.config
+D:\SoftUni\C# Basics\CSharp Basics Exam\5. BitsKiller\bin\Debug\_5.BitsKiller.exe
+D:\SoftUni\C# Basics\CSharp Basics Exam\5. BitsKiller\bin\Debug\_5.BitsKiller.pdb
+D:\SoftUni\C# Basics\CSharp Basics Exam\5. BitsKiller\obj\Debug\_5.BitsKiller.exe
+D:\SoftUni\C# Basics\CSharp Basics Exam\5. BitsKiller\obj\Debug\_5.BitsKiller.pdb

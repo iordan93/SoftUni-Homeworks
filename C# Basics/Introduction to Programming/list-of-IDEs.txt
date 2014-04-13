@@ -1,0 +1,20 @@
+* IntelliJ IDEA
+IntelliJ Idea is a Java IDE by JetBrains. It also supports other languages, such as PHP, via plugins. It has two versions - free and paid. It supports most of the common IDE functions - code refactoring, navigation, unit testing, and more.
+
+* Eclipse
+Eclipse is an IDE with modular architecture used primarily for Java programming. It has a few basic modules and can be extended to a great variety of languages and functions - Java, PHP, Perl, Ruby, C / C++, etc. All modules are available in the Eclipse Marketplace. 
+
+* NetBeans
+NetBeans is primarily used for Java applications but it's suitable for other languages such as PHP, C / C++, and HTML5. A key feature of this IDE is its modularity. This means many of the features can be added as separate modules to the main application. This makes it really flexible and extendable.
+
+* Aptana Studio
+Aptana Studio is an IDE for writing Web applications. It supports HTML, CSS and JavaScript, also PHP, Ruby on Rails and more. It has most of the common features of IDEs - syntax coloring, code navigation, and more.
+
+* PyCharm
+PyCharm is an IDE for Python developed by JetBrains. It has many of the features in Visual Studio. It supports refactoring (renaming, extracting methods, etc.), code navigation, debugging and more.
+Sources:
+http://en.wikipedia.org/wiki/IntelliJ_IDEA
+http://en.wikipedia.org/wiki/Eclipse_%28software%29
+http://en.wikipedia.org/wiki/NetBeans
+http://en.wikipedia.org/wiki/Aptana
+http://en.wikipedia.org/wiki/PyCharm

@@ -1,0 +1,5 @@
+D:\SoftUni\C# Basics\CSharp Basics Exam\4. MagicDates\bin\Debug\_4.MagicDates.exe.config
+D:\SoftUni\C# Basics\CSharp Basics Exam\4. MagicDates\bin\Debug\_4.MagicDates.exe
+D:\SoftUni\C# Basics\CSharp Basics Exam\4. MagicDates\bin\Debug\_4.MagicDates.pdb
+D:\SoftUni\C# Basics\CSharp Basics Exam\4. MagicDates\obj\Debug\_4.MagicDates.exe
+D:\SoftUni\C# Basics\CSharp Basics Exam\4. MagicDates\obj\Debug\_4.MagicDates.pdb

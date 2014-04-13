@@ -1,0 +1,5 @@
+C# is one of the languages in .NET Framework. Other languages include Visual Basic .NET and F#. The .NET Framework also includes many technologies, such as LINQ and ASP.NET. 
+The basic workflow goes like this: a C# project is compiled to IL (Intermediate Language). Then, the .NET Framework translates the IL into machine language and passes it to the operating system.
+
+Source:
+http://msdn.microsoft.com/en-us/library/z1zx9t92.aspx
