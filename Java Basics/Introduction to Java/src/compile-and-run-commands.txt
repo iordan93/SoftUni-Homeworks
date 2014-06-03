@@ -1,0 +1,2 @@
+cd path-to-project\Introduction to Java\src
+javac SumTwoNumbers.java
