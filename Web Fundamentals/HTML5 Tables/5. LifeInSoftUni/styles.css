@@ -1,0 +1,65 @@
+﻿body {
+    font-family: sans-serif;
+}
+
+table {
+    width: 400px;
+    font-size: 18px;
+}
+
+tr {
+    height: 100px;
+}
+
+table, td {
+    border: solid 1px #000;
+}
+
+    table thead:first-child {
+        font-size: 300%;
+        font-weight: bold;
+        padding: 20px;
+    }
+
+    table colgroup col {
+        width: 100px;
+    }
+
+.nested-table {
+    width: 90%;
+    font-size: 80%;
+    margin: auto;
+}
+
+    .nested-table tr {
+        height: 40px;
+    }
+
+tbody tr:nth-child(4) td:first-child {
+    font-size: 130%;
+}
+
+
+.top {
+    vertical-align: top;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.bottom {
+    vertical-align: bottom;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}

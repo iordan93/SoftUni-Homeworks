@@ -1,0 +1,31 @@
+﻿body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+}
+
+.container {
+    padding: 10px; 
+    background-color: #262522;
+    border: 1px solid #747065;
+    color: #ffffff;
+    font-size: 13pt;
+}
+
+ul {
+    list-style: square;
+    color: #f3be60;
+}
+
+.white-text {
+    font-size: 16pt;
+    color: #ffffff;
+}
+
+.highlight {
+    color: #f3cd60;
+    font-weight: bold;
+}
+
+h1 {
+    color: #f3be60;
+}

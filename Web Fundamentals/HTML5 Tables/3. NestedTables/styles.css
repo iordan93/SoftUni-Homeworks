@@ -1,0 +1,17 @@
+﻿body {
+    font-family: Arial, sans-serif;
+}
+
+table, td {
+    border: 1px solid;
+    font-size: 70px;
+}
+
+td {
+    padding: 10px;
+}
+
+img {
+    width: 180px;
+    height: 180px;
+}

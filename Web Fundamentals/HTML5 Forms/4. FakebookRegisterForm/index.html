@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Fakebook Register Form</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <h1>fakebook</h1>
+        <h2>Registration</h2>
+        <h3>It is safe and it will always be!</h3>
+        <form action="4. Fakebook">
+            <fieldset id="nonImportant">
+                <legend>None-Important information</legend>
+                <input type="text" name="firstName" placeholder="First Name">
+                <input type="text" name="lastName" placeholder="Last Name">
+                <br />
+                <input type="email" name="email" placeholder="Your Email">
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <br />
+                <input type="password" name="pass" placeholder="Your Password">
+                <input type="url" name="website" placeholder="Website">
+                <br>Birthday
+                <br />
+                <input type="datetime" name="birthday">
+                <br>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="other">Other
+            </fieldset>
+            <fieldset id="important">
+                <legend>Important information *required</legend>
+                <select name="country" id="country" required="required">
+                    <option value="" disabled="disabled" selected="selected">Country</option>
+                    <option value="bg">Bulgaria</option>
+                    <option value="us">USA</option>
+                    <option value="uk">United kingdom</option>
+                    <option value="ger">Germany</option>
+                </select>
+                <input type="text" name="village" placeholder="Village" required="required">
+                <input type="text" name="district" placeholder="District" required="required">
+                <br />
+                <input type="text" name="street" placeholder="Street" required="required">
+                <input type="number" name="number" placeholder="Nr" required="required">
+                <input type="number" name="floor" placeholder="Floor" required="required">
+                <input type="number" name="apNumber" placeholder="Ap Nr" required="required">
+                <br>Door color
+                <br />
+                <input type="color" name="doorColor" value="#FF69B4" required="required">
+                <input type="text" name="waterMeter" placeholder="Water Meter Nr" required="required">
+                <select name="auntPanties" id="auntPanties" required="required">
+                    <option value="" disabled="disabled" selected="selected">Aunt Panties' Size</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <br>More Personal Information
+                <br />
+                <textarea name="persInfo" id="persInfo" cols="35" rows="5" placeholder="Give Us More Information!!!" required="required"></textarea>
+            </fieldset>
+            <input type="reset" value="Clear Form">
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>

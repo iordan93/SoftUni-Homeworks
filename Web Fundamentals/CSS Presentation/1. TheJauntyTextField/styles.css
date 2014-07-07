@@ -1,0 +1,96 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 20px;
+    width: 750px;
+    height: 275px;
+    border-top: 7px dotted #FFFF00;
+    border-left: 7px dashed #FF0000;
+    border-right: 16px solid #008000;
+    border-bottom: 10px double #0000FF;
+    font-family: Tahoma;
+}
+
+section {
+    margin: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 54px;
+    font-weight: normal;
+    text-shadow: 15px 15px 12px #CFCFCF;
+}
+
+.color-borders {
+    margin: 40px 25px 40px 25px;
+    padding: 15px;
+    border-radius: 70px;
+    box-shadow: 0 0 0 3px #FF0000, 0 0 0 6px #FFFF00, 0 0 0 9px #008000, 0 0 0 12px #0000FF;
+    -moz-box-shadow: 0 0 0 3px #FF0000, 0 0 0 6px #FFFF00, 0 0 0 9px #008000, 0 0 0 12px #0000FF;
+    -webkit-shadow: 0 0 0 3px #FF0000, 0 0 0 6px #FFFF00, 0 0 0 9px #008000, 0 0 0 12px #0000FF;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    text-shadow: 12px 12px 12px #CFCFCF;
+}
+
+input {
+    background-color: #D8921A;
+    border: 4px outset #FFA500;
+    width: 220px;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 45px;
+}
+
+.small-bubble {
+    background-color: rgba(169,170,170,0.6);
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 3px dashed white;
+    box-shadow: 0px 0px 0px 6px rgba(169,170,170,0.6);
+    top: -107px;
+    left: 563px;
+}
+
+.medium-bubble {
+    background-color: rgba(169,170,170,0.6);
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px dashed white;
+    box-shadow: 0px 0px 0px 6px rgba(169,170,170,0.6);
+    top: -183px;
+    left: 632px;
+}
+
+.large-bubble {
+    background-color: rgba(169,170,170,0.6);
+    position: relative;
+    width: 135px;
+    height: 80px;
+    border-radius: 45px;
+    border: 3px dashed #ffffff;
+    box-shadow: 0px 0px 0px 6px rgba(169,170,170,0.6);
+    top: -292px;
+    left: 687px;
+}
+
+.cool {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 7px;
+    text-align: center;
+    vertical-align: bottom;
+}

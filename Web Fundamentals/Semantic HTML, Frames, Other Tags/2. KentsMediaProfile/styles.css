@@ -1,0 +1,46 @@
+﻿body {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    background-color: pink;
+}
+
+h1 {
+    margin-left: 430px;
+}
+
+section {
+    display: inline-block;
+}
+
+    section h2 {
+        font-size: 16px;
+        margin-bottom: 5px;
+        font-weight: normal;
+    }
+
+#completed {
+    margin-bottom: 5px;
+    margin-left: 6px;
+}
+
+#audio {
+    width: 300px;
+}
+
+meter {
+    margin-left: 6px;
+    width: 200px;
+    height: 20px;
+}
+
+img {
+    width: 230px;
+}
+
+figure {
+    margin: 5px;
+}
+
+figcaption {
+    margin-bottom: 5px;
+}

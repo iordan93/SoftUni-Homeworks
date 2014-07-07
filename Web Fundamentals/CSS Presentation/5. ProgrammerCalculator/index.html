@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Programmer Calculator</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <form action="#" method="post">
+        <div id="window">
+            <img src="images/icon.png" id="icon" alt="Calculator icon" />
+            <span id="heading">Calculator</span>
+            <img src="images/controls.png" id="controls" alt="Controls" />
+            <div id="calculator">
+                <div id="menu">
+                    <span class="menuItem">View</span><span class="menuItem">Edit</span><span class="menuItem">Help</span>
+                </div>
+
+                <div id="mainContent">
+                    <div id="inputBox">
+                        <span id="inputText">0</span>
+                    </div>
+
+                    <div id="binaryNumbers">
+                        <table>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="group">63</td>
+                                <td colspan="3" class="group">47</td>
+                                <td class="group">32</td>
+                            </tr>
+                            <tr>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="group">31</td>
+                                <td colspan="3" class="group">15</td>
+                                <td class="group">0</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="leftPart">
+                        <input type="radio" name="numeralSystem" id="Hex" />
+                        <label for="Hex">Hex</label>
+                        <br />
+                        <input type="radio" name="numeralSystem" id="Dec" />
+                        <label for="Dec">Dec</label>
+                        <br />
+                        <input type="radio" name="numeralSystem" id="Oct" />
+                        <label for="Oct">Oct</label>
+                        <br />
+                        <input type="radio" name="numeralSystem" id="Bin" />
+                        <label for="Bin">Bin</label>
+                    </div>
+                    <div class="leftPartBottom">
+                        <input type="radio" name="length" id="Qword" />
+                        <label for="Qword">Qword</label>
+                        <br />
+                        <input type="radio" name="length" id="Dword" />
+                        <label for="Dword">Dword</label>
+                        <br />
+                        <input type="radio" name="length" id="Word" />
+                        <label for="Word">Word</label>
+                        <br />
+                        <input type="radio" name="length" id="Byte" />
+                        <label for="Byte">Byte</label>
+                    </div>
+
+                    <div id="buttons">
+                        <table>
+                            <tr>
+                                <td><input type="button" value=" " disabled="disabled" /></td>
+                                <td><input type="button" value="Mod" /></td>
+                                <td><input type="button" value="A" disabled="disabled" /></td>
+                                <td><input type="button" class="memory" value="MC" /></td>
+                                <td><input type="button" class="memory" value="MR" /></td>
+                                <td><input type="button" class="memory" value="MS" /></td>
+                                <td><input type="button" class="memory" value="M+" /></td>
+                                <td><input type="button" class="memory" value="M-" /></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="(" /></td>
+                                <td><input type="button" value=")" /></td>
+                                <td><input type="button" value="B" disabled="disabled" /></td>
+                                <td><input type="button" value="&#8592;" /></td>
+                                <td><input type="button" value="CE" /></td>
+                                <td><input type="button" value="C" /></td>
+                                <td><input type="button" value="&plusmn;" /></td>
+                                <td><input type="button" value="&radic;" disabled="disabled" /></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="RoL" /></td>
+                                <td><input type="button" value="RoR" /></td>
+                                <td><input type="button" value="C" disabled="disabled" /></td>
+                                <td><input type="button" value="7" /></td>
+                                <td><input type="button" value="8" /></td>
+                                <td><input type="button" value="9" /></td>
+                                <td><input type="button" value="/" /></td>
+                                <td><input type="button" value="%" disabled="disabled" /></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="Or" /></td>
+                                <td><input type="button" value="Xor" /></td>
+                                <td><input type="button" value="D" disabled="disabled" /></td>
+                                <td><input type="button" value="4" /></td>
+                                <td><input type="button" value="5" /></td>
+                                <td><input type="button" value="6" /></td>
+                                <td><input type="button" value="*" /></td>
+                                <td><input type="button" value="1/x" disabled="disabled" /></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="Lsh" /></td>
+                                <td><input type="button" value="Rsh" /></td>
+                                <td><input type="button" value="E" disabled="disabled" /></td>
+                                <td><input type="button" value="1" /></td>
+                                <td><input type="button" value="2" /></td>
+                                <td><input type="button" value="3" /></td>
+                                <td><input type="button" value="-" /></td>
+                                <td rowspan="2"><input type="button" class="equals" value="=" /></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" value="Not" /></td>
+                                <td><input type="button" value="And" /></td>
+                                <td><input type="button" value="F" disabled="disabled" /></td>
+                                <td colspan="2"><input type="button" value="0" /></td>
+                                <td><input type="button" value="," disabled="disabled" /></td>
+                                <td><input type="button" value="+" /></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

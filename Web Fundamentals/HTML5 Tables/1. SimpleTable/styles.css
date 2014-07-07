@@ -1,0 +1,35 @@
+﻿body {
+    font-family: Arial, sans-serif;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+table {
+    width: 422px;
+    border: solid 1px;
+}
+
+span {
+    font-size: 16px;
+}
+
+h1 {
+    text-align: left;
+    margin: 0;
+}
+
+th {
+    vertical-align: top;
+    height: 60px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.padded {
+    padding-left: 10px;
+}

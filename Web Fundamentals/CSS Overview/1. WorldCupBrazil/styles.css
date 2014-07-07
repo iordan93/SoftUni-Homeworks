@@ -1,0 +1,232 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+div#wrapper {
+    background-color: #00923E;
+    width: 89%;
+    height: 440px;
+    padding: 20px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000000;
+    border-spacing: 0;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+
+    table thead {
+        font-size: 2.2em;
+        font-weight: bolder;
+    }
+
+        table thead tr {
+            background-color: #F8C711;
+            height: 60px;
+        }
+
+            table thead tr th {
+                border: 1px solid #000000;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+                table thead tr th:first-child {
+                    width: 200px;
+                    text-align: right;
+                    padding-right: 10px;
+                    -webkit-border-top-left-radius: 20px;
+                    -moz-border-radius-topleft: 20px;
+                    border-top-left-radius: 20px;
+                }
+
+                table thead tr th:nth-of-type(2) {
+                    width: 115px;
+                }
+
+                table thead tr th:nth-of-type(3) {
+                    width: 200px;
+                    text-align: left;
+                    padding-left: 10px;
+                }
+
+                table thead tr th:nth-of-type(4) {
+                    width: 112px;
+                }
+
+                table thead tr th:last-of-type {
+                    -webkit-border-top-right-radius: 20px;
+                    -moz-border-radius-topright: 20px;
+                    border-top-right-radius: 20px;
+                }
+
+    table tbody {
+        font-size: 1.3em;
+    }
+
+        table tbody tr {
+            background-color: #FFFFFF;
+        }
+
+            table tbody tr:nth-of-type(2n) {
+                background-color: #C8C8C8;
+            }
+
+            table tbody tr td {
+                border: 1px solid #000000;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                text-align: center;
+            }
+
+            table tbody tr:last-of-type td:first-of-type {
+                -webkit-border-bottom-left-radius: 20px;
+                -moz-border-radius-bottomleft: 20px;
+                border-bottom-left-radius: 20px;
+            }
+
+            table tbody tr:first-of-type td:nth-of-type(1) {
+                background-image: url(images/Brazil.jpg);
+                background-repeat: no-repeat;
+                background-position: 160px 25px;
+            }
+
+            table tbody tr:first-of-type td:nth-of-type(3) {
+                background-image: url(images/Mexico.jpg);
+                background-repeat: no-repeat;
+                background-position: 7px 25px;
+            }
+
+            table tbody tr:nth-of-type(2) td:nth-of-type(1) {
+                background-image: url(images/Spain.jpg);
+                background-repeat: no-repeat;
+                background-position: 160px 25px;
+            }
+
+            table tbody tr:nth-of-type(2) td:nth-of-type(3) {
+                background-image: url(images/Netherlands.jpg);
+                background-repeat: no-repeat;
+                background-position: 7px 25px;
+            }
+
+            table tbody tr:nth-of-type(3) td:nth-of-type(1) {
+                background-image: url(images/Italy.jpg);
+                background-repeat: no-repeat;
+                background-position: 160px 25px;
+            }
+
+            table tbody tr:nth-of-type(3) td:nth-of-type(3) {
+                background-image: url(images/England.jpg);
+                background-repeat: no-repeat;
+                background-position: 7px 25px;
+            }
+
+
+            table tbody tr:nth-of-type(4) td:nth-of-type(1) {
+                background-image: url(images/Argentina.jpg);
+                background-repeat: no-repeat;
+                background-position: 160px 25px;
+            }
+
+            table tbody tr:nth-of-type(4) td:nth-of-type(3) {
+                background-image: url(images/Bosnia.jpg);
+                background-repeat: no-repeat;
+                background-position: 7px 25px;
+            }
+
+            table tbody tr:last-of-type td:nth-of-type(1) {
+                background-image: url(images/Germany.jpg);
+                background-repeat: no-repeat;
+                background-position: 160px 25px;
+            }
+
+            table tbody tr:last-of-type td:nth-of-type(3) {
+                background-image: url(images/Portugal.jpg);
+                background-repeat: no-repeat;
+                background-position: 7px 25px;
+            }
+
+            table tbody tr td:nth-of-type(1) {
+                text-align: right;
+                padding-right: 40px;
+            }
+
+            table tbody tr td:nth-of-type(3) {
+                text-align: left;
+                padding-left: 40px;
+            }
+
+            table tbody tr td:nth-of-type(5) {
+                width: 170px;
+                text-align: right;
+                padding-right: 10px;
+            }
+
+            table tbody tr td:nth-of-type(7) {
+                text-align: left;
+                padding-left: 10px;
+            }
+
+            table tbody tr td:nth-of-type(6) {
+                width: 128px;
+            }
+
+            table tbody tr td:last-of-type {
+                width: 65px;
+            }
+
+            table tbody tr:last-of-type td:last-of-type {
+                -webkit-border-bottom-right-radius: 20px;
+                -moz-border-radius-bottomright: 20px;
+                border-bottom-right-radius: 20px;
+            }
+
+            table tbody tr td form select {
+            }
+
+            table tbody tr td button {
+                width: 45px;
+                height: 45px;
+                border-radius: 50px;
+                color: white;
+                background-color: red;
+            }
+
+            table tbody tr.active td button {
+                background-color: green;
+            }
+
+            table tbody tr td select {
+                height: 45px;
+                width: 45px;
+                font-size: 1em;
+                background-color: #DCDCDC;
+            }
+
+                table tbody tr td select.inactive {
+                    color: red;
+                }
+
+                table tbody tr td select.active {
+                    color: green;
+                    background-color: white;
+                }
+
+    table span {
+        display: inline-block;
+        padding: 0 5px;
+    }

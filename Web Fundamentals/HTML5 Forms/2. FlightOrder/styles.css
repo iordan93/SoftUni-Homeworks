@@ -1,0 +1,17 @@
+﻿body {
+font-style: italic;
+    background-color: rgb(255, 192, 203);
+}
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+input[type=date], input[type=time], input[type=number] {
+    width: 95%;
+}
+#flightForm {
+    width: 300px;
+}
+.dropdown {
+    width: 95%;
+}

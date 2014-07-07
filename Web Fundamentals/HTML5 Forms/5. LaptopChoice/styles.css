@@ -1,0 +1,56 @@
+﻿body {
+    font-family: "Lucida", "Trebuchet MS", sans-serif;
+    color: #345;
+}
+
+img {
+    width: 150px;
+}
+
+button {
+    width: 193px;
+    height: 200px;
+    border: solid 1px #d9eefa;
+    border-radius: 5px;
+    background-color: #fff;
+    background-image: none;
+    text-align: left;
+}
+
+.price {
+    color: #fff;
+    background-color: #345;
+    float: right;
+    padding: 5px;
+}
+
+#products {
+    float: left;
+    display: inline-block;
+}
+
+#filters {
+    width: 150px;
+    display: inline-block;
+    background-color: #f7fcff;
+    border: 1px solid #d8eef9;
+    padding: 5px;
+}
+
+.labelName {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.labelMin, .labelMax {
+    font-size: 10px;
+}
+
+.labelMax {
+    margin-top: 5px;
+    float: right;
+}
+
+input[type=range] {
+    width: 130px;
+}

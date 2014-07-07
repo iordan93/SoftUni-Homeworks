@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Flight Order</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <form action="#" method="get" id="flightForm">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="5">
+                        <h2>Flight order</h2>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3">From</td>
+                    <td colspan="2">To</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <select name="fromCity" id="fromCity" class="dropdown">
+                            <option value="enter">enter a city</option>
+                            <option value="Sf">Sofia</option>
+                            <option value="Ny">New York</option>
+                            <option value="Ln">London</option>
+                        </select>
+                    </td>
+                    <td colspan="2">
+                        <select name="toCity" id="toCity" class="dropdown">
+                            <option value="enter">enter a city</option>
+                            <option value="Sf">Sofia</option>
+                            <option value="Ny">New York</option>
+                            <option value="Ln">London</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td colspan="2">
+                        <input type="checkbox" name="prefer" id="prefer">
+                        <label for="prefer">Prefer directs</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">Departure date</td>
+                    <td colspan="2">Time interval</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="date" name="departure">
+                    </td>
+                    <td>
+                        <input type="time" name="depStart" id="depStart">
+                    </td>
+                    <td>
+                        <input type="time" name="depEnd" id="depEnd">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">Return date</td>
+                    <td colspan="2">Time interval</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="date" name="return">
+                    </td>
+                    <td>
+                        <input type="time" name="retStart" id="retStart">
+                    </td>
+                    <td>
+                        <input type="time" name="retEnd" id="retEnd">
+                    </td>
+                </tr>
+                <tr>
+                    <td>12+</td>
+                    <td>2-12</td>
+                    <td>0-2</td>
+                    <td colspan="2">Choose class</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" name="12+" id="12+">
+                    </td>
+                    <td>
+                        <input type="number" name="2-12" id="2-12">
+                    </td>
+                    <td>
+                        <input type="number" name="0-2" id="0-2">
+                    </td>
+                    <td colspan="2">
+                        <select name="class" id="class" class="dropdown">
+                            <option value="econ">Economy</option>
+                            <option value="bs">Bussines</option>
+                            <option value="fc">First class</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td colspan="2">
+                        <input type="submit" value="Search">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

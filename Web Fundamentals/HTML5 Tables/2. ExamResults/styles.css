@@ -1,0 +1,19 @@
+﻿body {
+    font-family: Arial, sans-serif;
+}
+
+thead tr:first-child {
+    font-size: 30px;
+}
+
+td, th {
+    padding: 5px;
+}
+
+table, td, th {
+    border: 1px solid #000000;
+}
+
+tfoot td {
+    text-align: right;
+}

@@ -1,0 +1,102 @@
+﻿body {
+    background-color: #eeeeee;
+    font-family: 'Tahoma', sans-serif;
+}
+
+h2 {
+    font-weight: bold;
+    color: #103458;
+    font-size: 16px;
+}
+
+p {
+    font-size: 9px;
+    color: #9e9e9e;
+}
+
+form {
+    width: 230px;
+    padding: 0 10px;
+    float: left;
+}
+
+    form h3 {
+        font-size: 11px;
+        font-weight: bold;
+        color: #606060;
+    }
+
+        form h3 span {
+            color: #1f4062;
+        }
+
+input {
+    width: 212px;
+    border: 1px solid #d8d8d8;
+    font-size: 11px;
+    color: #888888;
+    margin-bottom: 10px;
+    padding: 0 8px;
+    height: 25px;
+}
+
+button {
+    padding: 0 25px;
+    float: right;
+    height: 25px;
+    cursor: pointer;
+}
+
+form.login {
+    background-color: #234465;
+    height: 210px;
+}
+
+    form.login h3 {
+        color: #fff;
+    }
+
+    form.login .remember {
+        height: 25px;
+        float: left;
+    }
+
+    form.login input[type="checkbox"] {
+        float: left;
+        margin: 0 5px 0 0;
+        width: auto;
+    }
+
+    form.login label {
+        color: #fff;
+        font-size: 11px;
+    }
+
+    form.login a {
+        float: right;
+        color: #fff;
+        margin-top: 5px;
+        font-size: 9px;
+        font-weight: bold;
+    }
+
+.register button {
+    background: none;
+    border: 1px solid #526b85;
+    color: #526b85;
+}
+
+    .register button:hover {
+        background-color: #526b85;
+        color: #fff;
+    }
+
+.login button {
+    background: none;
+    border: 1px solid #d08916;
+    color: #fff;
+}
+
+    .login button:hover {
+        background-color: #d08916;
+    }

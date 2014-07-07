@@ -1,0 +1,107 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+#head {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #FFFF00;
+    border: 3px solid black;
+    margin: 5px 10px;
+}
+
+#left-eye {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid black;
+    position: relative;
+    left: 90px;
+    top: 90px;
+}
+
+#left-pupil {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+#right-eye {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid black;
+    position: relative;
+    left: 290px;
+    top: -10px;
+}
+
+#right-pupil {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#nose {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #FF0000;
+    border: 3px solid black;
+    position: relative;
+    left: 200px;
+    top: 0px;
+}
+
+#mouth {
+    width: 240px;
+    height: 90px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+    background-color: white;
+    border: 3px solid black;
+    position: relative;
+    left: 120px;
+    top: 20px;
+}
+
+#left-tooth {
+    border: 3px solid black;
+    border-top: none;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    left: 70px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#right-tooth {
+    border: 3px solid black;
+    border-top: none;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    left: 121px;
+    top: -48px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
