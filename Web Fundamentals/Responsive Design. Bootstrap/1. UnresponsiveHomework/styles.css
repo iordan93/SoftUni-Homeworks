@@ -1,0 +1,166 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+html {
+    font-size: 62.5%;
+    font-family: "Tahoma", San-serif;
+}
+
+body {
+    background-color: #6698FF;
+    padding-top: 45px;
+}
+
+#wrapper {
+    width: 780px;
+    font-size: 1.3rem;
+    margin: 0 auto;
+}
+
+
+    #wrapper > header, #wrapper > header h1 {
+        margin-bottom: 30px;
+    }
+
+header h1 a {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+header nav {
+    border-top: solid 1px #000;
+    position: relative;
+}
+
+    header nav ul {
+        position: absolute;
+        top: -15px;
+        right: 0;
+    }
+
+        header nav ul li {
+            display: inline-block;
+            background-color: #fff;
+            margin-right: 10px;
+            border: solid 1px #000;
+        }
+
+            header nav ul li a {
+                display: block;
+                font-size: 1.5rem;
+                padding: 5px 10px;
+            }
+
+#wrapper > section {
+    width: 590px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+section article {
+    background-color: #E0EAFE;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #000;
+}
+
+#wrapper section article > header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#wrapper section article div p {
+    text-indent: 25px;
+}
+
+#wrapper aside {
+    width: 153px;
+    display: inline-block;
+    background-color: #E0EAFE;
+    border: solid 1px #000;
+}
+
+    #wrapper aside div {
+        padding: 10px;
+    }
+
+.block {
+    margin-bottom: 10px;
+}
+
+    .block a {
+        color: #000;
+    }
+
+        .block a:hover {
+            text-decoration: underline;
+        }
+
+#wrapper footer {
+    background-color: #E0EAFE;
+    padding: 20px 0 5px 0;
+    border: solid 1px #000;
+}
+
+    #wrapper footer h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+        #wrapper footer h2 a {
+            text-decoration: underline;
+        }
+
+@media only screen and (max-width: 780px) {
+
+    #wrapper {
+        width: 98%;
+    }
+
+        #wrapper > header, #wrapper > section, #wrapper > aside {
+            width: 100%;
+            display: block;
+        }
+
+        #wrapper > aside {
+            margin-bottom: 10px;
+        }
+}
+
+@media only screen and (max-width: 640px) {
+
+    #wrapper header {
+        margin-bottom: 0;
+    }
+
+        #wrapper header h1 {
+            text-align: center;
+        }
+
+            #wrapper header h1 a span {
+                display: block;
+            }
+
+        #wrapper header nav ul {
+            width: 80%;
+            text-align: center;
+            position: relative;
+            margin: 0 auto;
+        }
+
+            #wrapper header nav ul li {
+                display: block;
+            }
+}

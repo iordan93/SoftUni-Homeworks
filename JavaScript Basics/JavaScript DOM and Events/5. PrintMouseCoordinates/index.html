@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Print Mouse Coordinates</title>
+</head>
+<body>
+    <script>
+        function printMouseCoordinates(e) {
+            document.body.innerHTML += 'X: ' + e.pageX + '; Y: ' + e.pageY + '; Time: ' + new Date() + '</br>';
+        }
+
+        document.addEventListener("mousemove", printMouseCoordinates, false);
+    </script>
+</body>
+</html>

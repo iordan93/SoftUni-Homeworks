@@ -1,0 +1,271 @@
+﻿$border-color: #808080;
+
+a {
+  text-decoration: none;
+  color: $border-color;
+}
+
+@mixin linear-vertical-gradient($color) {
+  background: $color; /* Old browsers */
+  background: -moz-linear-gradient(top, $color 0%, #ffffff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $color), color-stop(100%, #ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, $color 0%, #ffffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, $color 0%, #ffffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, $color 0%, #ffffff 100%); /* IE10+ */
+  background: linear-gradient(to bottom, $color 0%, #ffffff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color', endColorstr='#ffffff', GradientType=0); /* IE6-9 */
+}
+
+@mixin linear-horizontal-gradient($color) {
+  background: $color; /* Old browsers */
+  background: -moz-linear-gradient(left, $color 0%, #ffffff 100%, #7db9e8 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, $color), color-stop(100%, #ffffff), color-stop(100%, #7db9e8)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, $color 0%, #ffffff 100%, #7db9e8 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, $color 0%, #ffffff 100%, #7db9e8 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, $color 0%, #ffffff 100%, #7db9e8 100%); /* IE10+ */
+  background: linear-gradient(to right, $color 0%, #ffffff 100%, #7db9e8 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color', endColorstr='#ffffff', GradientType=1); /* IE6-9 */
+}
+
+@mixin linear-diagonal-gradient($color) {
+  background: $color; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, $color 0%, #ffffff 100%, #7db9e8 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, $color), color-stop(100%, #ffffff), color-stop(100%, #7db9e8)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, $color 0%, #ffffff 100%, #7db9e8 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, $color 0%, #ffffff 100%, #7db9e8 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, $color 0%, #ffffff 100%, #7db9e8 100%); /* IE10+ */
+  background: linear-gradient(135deg, $color 0%, #ffffff 100%, #7db9e8 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color', endColorstr='#ffffff', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+@mixin radial-gradient($color) {
+  background: $color; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, $color 0%, #ffffff 100%, #7db9e8 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $color), color-stop(100%, #ffffff), color-stop(100%, #7db9e8)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, $color 0%, #ffffff 100%, #7db9e8 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, $color 0%, #ffffff 100%, #7db9e8 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, $color 0%, #ffffff 100%, #7db9e8 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center, $color 0%, #ffffff 100%, #7db9e8 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color', endColorstr='#ffffff', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+@mixin border-double {
+  border: double 3px $border-color;
+}
+
+html {
+  font-family: "Tahoma", San-serif;
+
+  body {
+    @include linear-vertical-gradient($border-color);
+
+    #wrapper > header {
+      width: 920px;
+      height: 150px;
+
+      text-align: center;
+      margin: 20px auto;
+      @include border-double;
+
+      h1 {
+        font-size: 35px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+    }
+
+    #wrapper {
+      width: 960px;
+      color: $border-color;
+      background-color: #fff;
+      @include border-double;
+      margin: 0 auto;
+
+      header {
+
+        nav {
+          display: inline-block;
+
+          ul {
+            width: 450px;
+            display: flex;
+            justify-content: space-between;
+
+            li {
+              display: inline-block;
+
+              a {
+                display: block;
+                padding: 10px 25px;
+                @include border-double;
+
+                &:hover {
+                  color: #fff;
+                  @include linear-vertical-gradient($border-color);
+                }
+              }
+
+            }
+          }
+        }
+      }
+
+      section {
+        @include border-double;
+        margin: 20px;
+
+        h1 {
+          margin: 20px;
+          text-align: center;
+        }
+
+        article {
+          border: solid 1px $border-color;
+          margin: 20px;
+          text-align: center;
+
+          header {
+            h2 {
+              font-size: 16px;
+            }
+          }
+
+          div {
+            margin-bottom: 10px;
+
+            &::after {
+              content: "";
+              clear: both;
+              display: block;
+            }
+
+            div {
+              width: 135px;
+              height: 135px;
+              display: inline-block;
+              float: left;
+              border-radius: 20px;
+              &:first-child {
+                margin-left: 25px;
+              }
+            }
+          }
+        }
+      }
+
+      section.radial article {
+        .innerContainer {
+          div {
+            margin-top: 20px;
+          }
+          .purple {
+            @include radial-gradient(purple);
+          }
+          .blue {
+            @include radial-gradient(blue);
+          }
+          .green {
+            @include radial-gradient(green);
+          }
+          .yellow {
+            @include radial-gradient(yellow);
+          }
+          .orange {
+            @include radial-gradient(orange);
+          }
+          .red {
+            @include radial-gradient(orange);
+          }
+        }
+      }
+
+      #vertical ~ .innerContainer {
+        .purple {
+          @include linear-vertical-gradient(purple);
+        }
+        .blue {
+          @include linear-vertical-gradient(blue);
+        }
+        .green {
+          @include linear-vertical-gradient(green);
+        }
+        .yellow {
+          @include linear-vertical-gradient(yellow);
+        }
+        .orange {
+          @include linear-vertical-gradient(orange);
+        }
+        .red {
+          @include linear-vertical-gradient(orange);
+        }
+      }
+
+      #horizontal ~ .innerContainer {
+        .purple {
+          @include linear-horizontal-gradient(purple);
+        }
+        .blue {
+          @include linear-horizontal-gradient(blue);
+        }
+        .green {
+          @include linear-horizontal-gradient(green);
+        }
+        .yellow {
+          @include linear-horizontal-gradient(yellow);
+        }
+        .orange {
+          @include linear-horizontal-gradient(orange);
+        }
+        .red {
+          @include linear-horizontal-gradient(orange);
+        }
+      }
+
+      #diagonal ~ .innerContainer {
+        .purple {
+          @include linear-diagonal-gradient(purple);
+        }
+        .blue {
+          @include linear-diagonal-gradient(blue);
+        }
+        .green {
+          @include linear-diagonal-gradient(green);
+        }
+        .yellow {
+          @include linear-diagonal-gradient(yellow);
+        }
+        .orange {
+          @include linear-diagonal-gradient(orange);
+        }
+        .red {
+          @include linear-diagonal-gradient(orange);
+        }
+      }
+
+      footer {
+        text-align: center;
+        @include border-double;
+        margin: 20px;
+
+        ul {
+          li {
+            &:not(:last-child) {
+              margin-bottom: 5px;
+            }
+
+            &:last-child {
+              margin-bottom: 20px;
+            }
+
+          }
+        }
+      }
+
+    }
+
+    h1, h3 {
+      text-decoration: underline;
+    }
+  }
+}
+

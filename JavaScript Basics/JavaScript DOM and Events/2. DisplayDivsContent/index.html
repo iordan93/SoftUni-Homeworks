@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Display DIVs Content</title>
+</head>
+<body>
+    <div>first div</div>
+    <div>second div</div>
+    <div class="empty"></div>
+    <div>third div<div>inner div</div></div>
+    <ul id="result"></ul>
+    <script>
+        // John Resig (the creator of jQuery) on using DocumentFragment
+        // to improve performance: http://ejohn.org/blog/dom-documentfragments/
+        var divs = document.getElementsByTagName("div");
+        var list = document.createDocumentFragment();
+        for (var i = 0; i < divs.length; i++) {
+            if (divs[i].innerText != "") {
+                var li = document.createElement("li");
+                li.innerHTML = divs[i].innerHTML;
+                list.appendChild(li);
+            }
+        }
+
+        var ul = document.getElementById("result");
+        ul.appendChild(list);
+    </script>
+</body>
+</html>

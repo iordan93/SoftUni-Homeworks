@@ -1,0 +1,155 @@
+﻿@keyframes hover-img {
+  0% {
+    transform: rotate(0deg);
+    -ms-transform:rotate(0deg); /* IE 9 */
+  }
+  50% {
+    transform: rotate(4deg);
+    -ms-transform:rotate(4deg); /* IE 9 */
+  }
+  100% {
+    transform: rotate(0deg);
+    -ms-transform:rotate(0deg); /* IE 9 */
+  }
+}
+
+@-webkit-keyframes hover-img {
+  0% {
+    -webkit-transform:rotate(0deg); /* Opera, Chrome, and Safari */
+  }
+  50% {
+    -webkit-transform:rotate(4deg); /* Opera, Chrome, and Safari */
+  }
+  100% {
+    -webkit-transform:rotate(0deg); /* Opera, Chrome, and Safari */
+  }
+}
+
+@keyframes rotate-img {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+@-webkit-keyframes rotate-img {
+  0% {
+    -webkit-transform:rotate(0deg); /* Opera, Chrome, and Safari */
+  }
+
+  50% {
+    -webkit-transform:rotate(0deg); /* Opera, Chrome, and Safari */
+  }
+
+  100% {
+    -webkit-transform:rotate(720deg); /* Opera, Chrome, and Safari */
+  }
+}
+
+@mixin hover-effect($duration: 0.3s){
+  -webkit-animation: hover-img $duration;
+  animation: hover-img $duration;
+}
+
+@mixin rotate-img($duration: 2.5s){
+  -webkit-animation: rotate-img $duration;
+  animation: rotate-img $duration;
+}
+
+html {
+  body {
+    background-color: #BAB9B9;
+
+    section {
+      width: 700px;
+      background-color: #DDDDDD;
+      border-radius: 5px;
+      border: solid 1px #CDCDCD;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 0 5px #000;
+
+      label {
+        width: 180px;
+        height: 140px;
+        display: inline-block;
+        margin: 3px;
+        cursor: pointer;
+        position: relative;
+
+        &:hover img {
+          @include hover-effect;
+        }
+
+        &:focus img{
+          z-index: 1001;
+        }
+
+        img {
+          width: 170px;
+          height: 130px;
+          position: absolute;
+          top:0;
+          left: 0;
+          background-color: #fff;
+          padding: 5px;
+          border-radius: 3px;
+          box-shadow: 0 0 2px #BAB9B9;
+          transition: 1s;
+          -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+        }
+
+      }
+
+      input {
+        position: absolute;
+        visibility: hidden;
+
+        &:checked + label > img {
+          width: 450px;
+          height: 346px;
+          padding: 10px;
+          z-index: 1001;
+          @include rotate-img();
+        }
+
+        &:checked + label {
+          width: 178px;
+          height: 138px;
+          border: solid 1px #94B9E9;
+          border-radius: 3px;
+        }
+
+        &:checked + label > img.col-1 {
+          left: 40px;
+        }
+        &:checked + label > img.col-2 {
+          left: -150px;
+        }
+        &:checked + label > img.col-3 {
+          left: -340px;
+        }
+        &:checked + label > img.row-1 {
+          top: 120px;
+        }
+        &:checked + label > img.row-2 {
+          top: -40px;
+        }
+        &:checked + label > img.row-3 {
+          top: -200px;
+        }
+        &:checked + label > img.row-4 {
+          top: -360px;
+        }
+      }
+    }
+  }
+}

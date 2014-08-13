@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ticking Clock</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="clock.js"></script>
+</head>
+<body>
+    <!-- Tutorial: http://www.paulrhayes.com/2009-03/an-analogue-clock-using-only-css/
+        (with some refactoring and migrating from jQuery to pure JavaScript by me)
+        -->
+    <div id="clock">
+        <div id="hour"><img src="images/hourHand.png" /></div>
+        <div id="minute"><img src="images/minuteHand.png" /></div>
+        <div id="second"><img src="images/secondHand.png" /></div>
+    </div>
+
+    <script type="text/javascript">
+        clockTick();
+        setInterval(clockTick, 1000);
+    </script>
+</body>
+</html>
