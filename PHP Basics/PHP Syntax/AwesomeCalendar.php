@@ -8,23 +8,23 @@ $names["months"] = array("Януари", "Февруари", "Март", "Апр
 $names["days"] = array("По", "Вт", "Ср", "Чт", "Пе", "Сб", "Не");
 
 // Idea for the calendar: http://css-tricks.com/snippets/php/build-a-calendar-table/
-function build_calendar($month, $year)
+function buildCalendar($month, $year)
 {
     // It's not generally a good idea to use global variables but it works
     global $names;
+    $daysInMonth = cal_days_in_month(CAL_GREGORIAN, $month, $year);
     $firstDayOfMonth = mktime(0, 0, 0, $month, 1, $year);
-    $daysInMonth = date("t", $firstDayOfMonth);
 
     // -1 is to make the day of week start from 0 (so that it is more natural to work with, using arrays)
     $dayOfWeek = getdate($firstDayOfMonth)["wday"] - 1;
     $calendar = "<table class=\"calendar\">
-        <caption>" . $names["months"][$month - 1] . "</caption><tr>";
+        <caption>" . $names["months"][$month - 1] . "</caption><thead><tr>";
     foreach ($names["days"] as $day) {
         $calendar .= "<th class=\"header\">" . $day . "</th>";
     }
 
     $currentDay = 1;
-    $calendar .= "</tr><tr>";
+    $calendar .= "</tr></thead><tbody><tr>";
     if ($dayOfWeek > 0) {
         $calendar .= "<td colspan=\"" . $dayOfWeek . "\"></td>";
     }
@@ -41,11 +41,10 @@ function build_calendar($month, $year)
     }
 
     if ($dayOfWeek != 7) {
-        $remainingDays = 7 - $dayOfWeek;
-        $calendar .= "<td colspan=\"" . $remainingDays . "\"></td>";
+        $calendar .= "<td colspan=\"" . (7 - $dayOfWeek) . "\"></td>";
     }
 
-    $calendar .= "</tr></table>";
+    $calendar .= "</tr></tbody></table>";
     return $calendar;
 }
 
@@ -53,6 +52,7 @@ function build_calendar($month, $year)
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta charset="utf-8">
     <title>Awesome Calendar</title>
     <style type="text/css">
         table {
@@ -82,7 +82,7 @@ function build_calendar($month, $year)
         }
 
         .months {
-        text-align: center;
+            text-align: center;
         }
     </style>
 </head>
@@ -90,7 +90,7 @@ function build_calendar($month, $year)
 <?php
 echo "<div class=\"year\">" . date("Y") . "</div><div class=\"months\">";
 for ($i = 1; $i <= 12; $i++) {
-    echo build_calendar($i, date("Y"));
+    echo buildCalendar($i, date("Y"));
     if ($i % 4 == 0) {
         echo "<br />";
     }
