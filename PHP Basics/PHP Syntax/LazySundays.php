@@ -10,5 +10,5 @@ function getSundays($y, $m)
 }
 
 foreach (getSundays(date("Y"), date("M")) as $sunday) {
-    echo $sunday->format("d F Y") . "<br />";
+    echo $sunday->format("jS F Y") . "<br />";
 }
