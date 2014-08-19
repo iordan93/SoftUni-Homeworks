@@ -71,15 +71,6 @@ function validateFields()
 
     return !$error;
 }
-
-if ($_POST) {
-    if(validateFields()) {
-        // This is generally a bad idea but there is nothing else in the page except the form data
-        // so I will use it as a shortcut
-        $_SESSION = $_POST;
-        header("location: CVResult.php");
-    }
-}
 ?>
 
 <!DOCTYPE html>
@@ -90,6 +81,14 @@ if ($_POST) {
     <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
+<?php
+if ($_POST && validateFields()) {
+	// This is generally a bad idea but there is nothing else in the page except the form data
+	// so I will use it as a shortcut
+	$_SESSION = $_POST;
+	header("location: CVResult.php");
+}
+?>
 <form method="post">
     <fieldset>
         <legend>Personal Information</legend>
