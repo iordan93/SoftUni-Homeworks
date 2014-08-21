@@ -15,7 +15,7 @@ if (isset($_POST["numbers"]) && !empty($_POST["numbers"])) {
     echo "<table border=\"1\">";
     foreach ($numbers as $number) {
         echo "<tr><td>$number</td><td>";
-        if (filter_var($number, FILTER_VALIDATE_INT) !== false) {
+        if (ctype_digit($number)) {
             echo array_sum(str_split($number));
         } else {
             echo "I cannot sum that";
