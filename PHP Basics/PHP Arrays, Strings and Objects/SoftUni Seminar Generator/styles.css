@@ -1,0 +1,59 @@
+body {
+    font-family: 'PT Sans', 'Segoe UI', Arial, sans-serif;
+}
+
+.error {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.seminars-table {
+    border: 1px solid #f4f4f4;
+    border-collapse: collapse;
+}
+
+.seminars-table th {
+    color: #ffffff;
+    background-color: #234465;
+}
+
+.seminars-table th, .seminars-table td {
+    padding: 5px 10px 5px 10px;
+}
+
+.seminars-table tr:nth-of-type(odd) {
+    background-color: #e2e2e2;
+}
+
+a, a:visited {
+    color: #000000;
+}
+
+a:hover, a:active {
+    color: #ff4432;
+}
+
+.signup-button, .signup-button:hover, .signup-button:active, .signup-button:visited {
+    padding: 3px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #ff9c00;
+    border: 1px solid #000000;
+}
+
+.tooltip {
+    display: none;
+    max-width: 350px;
+    position: absolute;
+    border: 1px solid #595959;
+    color: #595959;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.title {
+    font-weight: bold;
+    text-decoration: underline;
+}
