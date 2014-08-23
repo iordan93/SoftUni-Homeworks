@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Rich People's Problems</title>
-</head>
+</head> 
 <body>
 <form method="post">
     <label for="cars">Enter cars:</label>
