@@ -1,10 +1,11 @@
 ﻿using System;
-public class Fraction
+
+public struct Fraction
 {
     private long numerator;
     private long denominator;
 
-    public Fraction(long numerator, long denominator)
+    public Fraction(long numerator, long denominator) : this()
     {
         this.Numerator = numerator;
         this.Denominator = denominator;
