@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. GalacticGPS", "1. GalacticGPS\1. GalacticGPS.csproj", "{BFEC4594-F971-4D97-9220-F48C7F5F5999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. FractionCalculator", "2. FractionCalculator\2. FractionCalculator.csproj", "{C92E06EB-A5AF-49FB-9A81-A2DB83A4EF0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. GenericList", "3. GenericList\3. GenericList.csproj", "{7603284D-3301-4B7C-BA37-2F2F2136E93D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. GenericListVersion", "4. GenericListVersion\4. GenericListVersion.csproj", "{E2129463-17E6-45E0-B914-9DA1B73CFEBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFEC4594-F971-4D97-9220-F48C7F5F5999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFEC4594-F971-4D97-9220-F48C7F5F5999}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFEC4594-F971-4D97-9220-F48C7F5F5999}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFEC4594-F971-4D97-9220-F48C7F5F5999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C92E06EB-A5AF-49FB-9A81-A2DB83A4EF0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92E06EB-A5AF-49FB-9A81-A2DB83A4EF0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92E06EB-A5AF-49FB-9A81-A2DB83A4EF0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92E06EB-A5AF-49FB-9A81-A2DB83A4EF0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7603284D-3301-4B7C-BA37-2F2F2136E93D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7603284D-3301-4B7C-BA37-2F2F2136E93D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7603284D-3301-4B7C-BA37-2F2F2136E93D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7603284D-3301-4B7C-BA37-2F2F2136E93D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2129463-17E6-45E0-B914-9DA1B73CFEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2129463-17E6-45E0-B914-9DA1B73CFEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2129463-17E6-45E0-B914-9DA1B73CFEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2129463-17E6-45E0-B914-9DA1B73CFEBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
